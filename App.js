@@ -15,7 +15,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <VideoView
-        style={styles.video}
         player={player}
         nativeControls={true}
         allowsPictureInPicture={true}
