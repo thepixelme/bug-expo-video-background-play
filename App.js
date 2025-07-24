@@ -15,6 +15,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <VideoView
+        style={styles.video}
         player={player}
         nativeControls={true}
         allowsPictureInPicture={true}
@@ -27,8 +28,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#111',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  video: {
+    width: '100%',
+    height: '100%',
   },
 });
